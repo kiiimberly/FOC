@@ -1,0 +1,17 @@
+1. git init - //initialise the directory
+
+2. git add .  //going to add all the file , the period says all
+
+3. //configure the project
+   git config user.email vsylvester@ub.edu.bz
+  git config --global user.name  vsylvester1 //
+
+4. git commit -m "first commit of the project"  //the commit the user
+
+5. Create your new repository if you have not done so
+
+6. Tie the git to github
+
+copy the address of the github
+follow the command line instructions to push an existing repository from the 
+command li

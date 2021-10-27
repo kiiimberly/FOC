@@ -11,7 +11,7 @@ if(finalBmi > 18.5 && finalBmi < 25){
 document.bmiform.meaning.value = "You are healthy."
 }
 if(finalBmi > 25){
-document.bmiform.meaning.value = "Overweight BMI. Please go on a diet!"
+document.bmiform.meaning.value = "Overweight BMI."
 }
 }
 else{
