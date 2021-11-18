@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Binary to Base Ten Conversion</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+img {
+  float: center;
+ padding-right: 40px; 
+ padding-left: 40px;
+ padding-bottom: 40px;
+ 
+}
+
+div {
+  resize: both;
+  overflow: auto;
+}
+</style>
+</head>
+
+<body>
+<header>
+  <h2><b>Binary to Base Ten Conversion</b></h2>
+</header>
+
+
+<center>
+<section>
+
+<div class="row">
+  <div class="column" style="background-color: lavender;">
+    <h3>Converting Binary to Base Ten</h3>
+	<p>The decimal number system that we used everyday contains ten digits, 0 through 9 and the base of this system is 10.
+	In the binary system, only 2 digits are used, namely 0 and 1. 
+	In order to convert from Binary to Decimal (base 10), one must know the positional values in the base two system.
+	The positional values in a base 2 system are:
+	<p><img src="positions.jpg"></p>	
+	<p>In order to change from binary to decimal, these steps can be followed:
+	<ul>
+	<li>Place the binary number in the right position.</li>
+	<li>Pay attention to where the 1's are placed.</li>
+	<li>Add the products based on the postion.</li>
+	</ul>
+	<p>Here's an example:</p>
+	<img src="conversion.png"width="400" height="200">
+	<p>In this example, the binary 11001 is 25 in base 10. </p>
+	</p>
+	</p>
+  </div>
+  
+  
+  
+  
+  <div class="column" style="background-color:#bbb;">
+    <h3>Try it out below!</h3>
+	 <p><img src="table.jpg" width="400" height="300"></p>
+	 <p>Enter any binary number using 1-8 bits:</p>
+<p><input type="number" id="inputBin" value=""></p>
+
+
+<button onclick="toDecimal()">Convert</button>
+<p></p>
+<p>The Base 10 Value : </p>
+<p id="demo""></p>
+</div>
+</section>
+
+<script>
+function toDecimal() {
+  var x = document.getElementById("inputBin").value;
+  var digit = parseInt(x, 2);
+  console.log(digit);
+  document.getElementById("demo").innerHTML = digit;
+  }
+</script>
+
+
+	 
+	 
+  </div>
+</div>
+</section>
+
+<center><a href="index.html">Back to Home</a></h3></center>
+
+<footer>
+  <p>@ Powered by UB</p>
+</footer>
+</body>
+</html>
