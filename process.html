@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CPU Process</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .button {
+    font: size 16%;;
+    background-color: purple;
+    color: white;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h2>The CPU Operations</h2>
+  <h6>Program and data being loaded into the CPU operated on and being stored back into memory</h6>
+</header>
+<center>
+<div class="row">
+  <div class="column" style="background-color: lavender;">
+    <h2>Input</h2>
+    <p><button class="button" onclick="document.getElementById('comm').src='nocomm.png'">No Command</button></p>
+    
+    <p><button class="button"onclick="document.getElementById('comm').src='wdandcom.png'">With Data and Command</button>→
+    <button class="button" onclick="document.getElementById('comm').src='4.png'">Execution of Command in cell 4</button></p>
+    
+    <p><button class="button"onclick="document.getElementById('comm').src='5.png'">Execution of Command in cell 5</button>→
+    <button class="button"onclick="document.getElementById('comm').src='6.png'">Execution of Command in cell 6</button></p>
+    <button class="button" onclick="document.getElementById('comm').src='7.png'">Execution of Command in cell 7</button>→
+    <button class="button"onclick="document.getElementById('comm').src='8.png'">Execution of Command in cell 8</button>
+
+</div>
+ <div class="column" style="background-color:#bbb;">
+    <h2>Output</h2>	
+	<img id="comm" src="nocomm.png" alt="noton" width="500" height="240" align="center">
+  </div>
+</div>
+
+
+</center>
+<center><a href="index.html">Back to Home</a></h3></center>
+<footer>
+  <p>@ Powered by UB</p>
+</footer>
+</body>
+</html>
